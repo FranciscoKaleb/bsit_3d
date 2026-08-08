@@ -4,7 +4,95 @@
 <meta charset="UTF-8">
 <title>Lorenzo, Zamuelle Timothy Honra — Class Roster</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="../css/style.css">
+<style>
+  * { box-sizing: border-box; }
+  body.card-page {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e9e4d8;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 24px;
+  }
+  .index-card {
+    background: #fdfaf1;
+    width: 100%;
+    max-width: 520px;
+    border: 1px solid #cfc8b4;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    padding: 28px 32px 36px;
+    position: relative;
+  }
+  .index-card::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 48px; bottom: 0;
+    border-left: 2px solid #e6a0a0;
+  }
+  .card-eyebrow {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: #8a8371;
+    margin-bottom: 14px;
+  }
+  .card-name {
+    font-size: 22px;
+    margin: 0 0 4px;
+    color: #2b2b2b;
+  }
+  .card-sub {
+    font-size: 12px;
+    color: #8a8371;
+    margin: 0 0 14px;
+  }
+  .card-red-rule {
+    height: 2px;
+    background: #c65b5b;
+    margin-bottom: 20px;
+  }
+  .card-lines {
+    text-align: center;
+    padding: 18px 0 6px;
+  }
+  .pogi-text {
+    font-size: 40px;
+    font-weight: bold;
+    color: #c65b5b;
+    letter-spacing: 2px;
+    display: inline-block;
+    animation: bounce 1.4s ease-in-out infinite, glow 2s ease-in-out infinite;
+  }
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0) rotate(-2deg); }
+    50% { transform: translateY(-14px) rotate(2deg); }
+  }
+  @keyframes glow {
+    0%, 100% { text-shadow: 0 0 6px rgba(198,91,91,0.3); }
+    50% { text-shadow: 0 0 22px rgba(198,91,91,0.8); }
+  }
+  .stamp {
+    margin-top: 24px;
+    display: inline-block;
+    border: 3px solid #2f7d3f;
+    color: #2f7d3f;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 6px 18px;
+    transform: rotate(-6deg);
+    font-size: 15px;
+  }
+  .stamp small {
+    display: block;
+    font-size: 9px;
+    letter-spacing: 1px;
+    font-weight: normal;
+    margin-top: 2px;
+  }
+</style>
 </head>
 <body class="card-page">
   <article class="index-card">
@@ -16,8 +104,8 @@
     <p class="card-sub">Entry 021 of 034 · Filed under &ldquo;L&rdquo;</p>
     <div class="card-red-rule"></div>
     <div class="card-lines">
-      <p class="card-body-text">There&rsquo;s nothing here yet.</p>
-      <div class="stamp">PENDING<small>NO RECORD ON FILE</small></div>
+      <span class="pogi-text">POGI AKO</span>
+      <div class="stamp">CONFIRMED<small>VERIFIED ON FILE</small></div>
     </div>
   </article>
 </body>
